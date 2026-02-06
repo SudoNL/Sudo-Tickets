@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Panel - Cloud RP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo.png" alt="Cloud RP Logo" class="logo">
+        <h1>Staff Panel - Afmelden</h1>
+        <p>Vul de onderstaande informatie in om je af te melden.</p>
+        <form id="signoff-form">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required><br><br>
+
+            <label for="startdatum">Startdatum:</label>
+            <input type="date" id="startdatum" name="startdatum" required><br><br>
+
+            <label for="eindatum">Eindatum:</label>
+            <input type="date" id="eindatum" name="eindatum" required><br><br>
+
+            <label for="reden">Reden:</label>
+            <textarea id="reden" name="reden" required></textarea><br><br>
+
+            <button type="submit">Afmelden</button>
+        </form>
+        <p id="message"></p>
+        <button onclick="window.location.href='/clock'">Ga naar Clock Systeem</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
